@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Meta para adaptarnos a un método responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E18 - Entorno responsive</title>
+    <link rel="stylesheet" href="css/style.css">
+<head></head>
+    <body>
+    <!-- Menú responsive -->
+    <header class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            JoGeek
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <nav class="nav-links">
+          <a href="/">Inicio</a>
+          <a href="#contacto">Contacto</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#donde">Donde estamos</a>
+        </nav>
+    </header>
+    <main>
+        <section class="carousel">
+            <picture><!-- Utilizamos HTML5 pra incluir una imagen -->
+                <!-- Utilizamos una media para cargar una imagen para escritorio -->
+                <source srcset="https://dummyimage.com/1920x1200/000/fff" media="(min-width: 1200px)" class="img-fluid">
+                <source srcset="https://dummyimage.com/1200x800/000/fff" media="(min-width: 768px)" class="img-fluid">
+                <!-- la imagen por defecto para movil-->
+                <img src="https://dummyimage.com/768x480/000/fff" alt="" class="img-fluid">
+            </picture>
+        </section>
+        <section>
+            <div class="container">
+                <h1>Sistema responsivo básico</h1>
+                <p>Este es un ejemplo con grid de móvil y escritorio.</p>
+                <div class="row">
+                    <div class="col-4">
+                        <h2>Columna 1</h2>
+                        <img src="https://dummyimage.com/800x600/000/fff" alt="" class="img-fluid">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, vitae iste ea dicta vero minus autem ad, in ullam sit porro ut iure beatae est ex magni pariatur assumenda quas!</p>
+                    </div>
+                    <div class="col-4">
+                        <h2>Columna 2</h2>
+                        <img src="https://dummyimage.com/800x600/000/fff" alt="" class="img-fluid">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, vitae iste ea dicta vero minus autem ad, in ullam sit porro ut iure beatae est ex magni pariatur assumenda quas!</p>
+                    </div>
+                    <div class="col-4">
+                        <h2>Columna 3</h2>
+                        <img src="https://dummyimage.com/800x600/000/fff" alt="" class="img-fluid">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, vitae iste ea dicta vero minus autem ad, in ullam sit porro ut iure beatae est ex magni pariatur assumenda quas!</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-8">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, nam eveniet. Exercitationem similique amet pariatur perspiciatis ipsam, blanditiis modi! Doloribus perferendis vero error distinctio mollitia, sapiente libero cumque veritatis dolores!</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="https://dummyimage.com/800x600/000/fff" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

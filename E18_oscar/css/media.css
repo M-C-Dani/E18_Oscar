@@ -1,0 +1,5 @@
+/* Hago que las imágenes se adapten al ancho del contenedor */
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+}
